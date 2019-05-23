@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="@dimen/horizontal_default_margin" >
+    <shape
+        android:shape="line" >
+        <stroke
+            android:width="1px"
+            android:color="@color/colorDisabled" />
+        <size android:height="1dp" />
+    </shape>
+</inset>

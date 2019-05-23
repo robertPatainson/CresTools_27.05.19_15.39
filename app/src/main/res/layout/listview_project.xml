@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- Bottom View Start-->
+    <LinearLayout
+        android:id="@+id/bottom_wrapper"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <TextView
+            android:id="@+id/textViewEdit"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:text="Edit"
+            android:textColor="@color/White"
+            android:gravity="center"
+            android:paddingStart="@dimen/horizontal_default_margin"
+            android:paddingEnd="@dimen/horizontal_default_margin"
+            android:background="@drawable/button_primary"/>
+        <TextView
+            android:id="@+id/textViewDelete"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:text="Delete"
+            android:textColor="@color/White"
+            android:gravity="center"
+            android:paddingStart="@dimen/horizontal_default_margin"
+            android:paddingEnd="@dimen/horizontal_default_margin"
+            android:background="@drawable/button_danger"/>
+    </LinearLayout>
+    <!-- Bottom View End-->
+    <!-- Surface View Start -->
+    <LinearLayout
+        android:id="@+id/layoutSurface"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/rippled_layout"
+        android:clickable="true"
+        android:focusable="true">
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical|start"
+            android:paddingStart="@dimen/horizontal_default_margin"
+            android:paddingEnd="@dimen/horizontal_default_margin"
+            android:text="Project"
+            android:textColor="@color/Black"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/labelAmountDevices"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical|end"
+            android:paddingStart="@dimen/horizontal_default_margin"
+            android:paddingEnd="@dimen/horizontal_default_margin"
+            android:text="0 device"
+            android:textColor="@color/Gray"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:drawableEnd="@drawable/ic_chevron_right"
+            android:drawableTint="@color/Gray" />
+    </LinearLayout>
+    <!-- Surface View End -->
+</com.daimajia.swipe.SwipeLayout>

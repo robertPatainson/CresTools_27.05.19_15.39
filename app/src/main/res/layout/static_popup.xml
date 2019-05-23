@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="150dp"
+    android:layout_marginRight="@dimen/horizontal_default_margin"
+    android:layout_marginLeft="@dimen/horizontal_default_margin"
+    android:layout_marginTop="@dimen/vertical_default_margin"
+    android:layout_marginBottom="@dimen/vertical_default_margin"
+    android:background="@drawable/popup">
+    <TextView
+        android:id="@+id/textViewInfo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="@drawable/button_popup_top"
+        android:text="Add the address to : "
+        android:textSize="14sp" />
+    <Button
+        android:id="@+id/buttonNewDevice"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewInfo"
+        android:background="@drawable/button_popup_middle"
+        android:text="A new device"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:stateListAnimator="@null"/>
+    <Button
+        android:id="@+id/buttonExistingDevice"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/buttonNewDevice"
+        android:background="@drawable/button_popup_bottom"
+        android:text="An existing device"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:stateListAnimator="@null"/>
+</RelativeLayout>

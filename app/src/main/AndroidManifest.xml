@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lafayeboulhalfa.app.crestools">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:fullBackupContent="true">
+        <activity
+            android:name="com.lafayeboulhalfa.app.crestools.ProjectActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lafayeboulhalfa.app.crestools.DeviceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lafayeboulhalfa.app.crestools.DeviceAddStep1Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.lafayeboulhalfa.app.crestools.DeviceAddStep2Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.lafayeboulhalfa.app.crestools.DeviceEditActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.lafayeboulhalfa.app.crestools.DeviceTerminalActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.lafayeboulhalfa.app.crestools.ExportActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.lafayeboulhalfa.app.crestools.SocketService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.lafayeboulhalfa.app.crestools.ImportStep1Activity"
+            android:screenOrientation="portrait">
+
+            <!-- For email attachments -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="application/*"
+                    android:pathPattern=".*.xadr"
+                    android:scheme="content"
+                    tools:ignore="AppLinkUrlError" />
+            </intent-filter>
+
+            <!-- For file browsers -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="application/*"
+                    android:pathPattern=".*.xadr"
+                    android:scheme="file"
+                    tools:ignore="AppLinkUrlError" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lafayeboulhalfa.app.crestools.ImportStep2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lafayeboulhalfa.app.crestools.CommandsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lafayeboulhalfa.app.crestools.ReportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lafayeboulhalfa.app.crestools.ReportExecuteStep1Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lafayeboulhalfa.app.crestools.ReportCreateActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.lafayeboulhalfa.app.crestools.ReportExecuteStep2Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.lafayeboulhalfa.app.crestools.ReportExecuteStep3Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.lafayeboulhalfa.app.crestools.BrowserActivity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

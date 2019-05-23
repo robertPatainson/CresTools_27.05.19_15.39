@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/layoutLine"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:background="@drawable/rippled_layout"
+    android:clickable="true"
+    android:focusable="true">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1">
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayoutMiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/labelIp"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical|start"
+            android:paddingStart="@dimen/horizontal_default_margin"
+            android:paddingEnd="@dimen/horizontal_default_margin"
+            android:text="192.168.0.1"
+            android:textColor="@color/Black"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/labelHostname"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_below="@id/labelIp"
+            android:gravity="center_vertical|start"
+            android:paddingStart="@dimen/horizontal_default_margin"
+            android:paddingEnd="@dimen/horizontal_default_margin"
+            android:text="Hostname"
+            android:textColor="@color/Black"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayoutRight"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/labelFake"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical|start"
+            android:paddingStart="@dimen/horizontal_default_margin"
+            android:paddingEnd="@dimen/horizontal_default_margin"
+            android:text=""
+            android:textColor="@color/Black"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/labelSerialNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_below="@id/labelFake"
+            android:gravity="center_vertical|start"
+            android:paddingStart="@dimen/horizontal_default_margin"
+            android:paddingEnd="@dimen/horizontal_default_margin"
+            android:text="Serial Number"
+            android:textColor="@color/Black"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</LinearLayout>
