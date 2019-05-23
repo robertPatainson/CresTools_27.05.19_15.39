@@ -12,7 +12,6 @@ public class AnimationManager extends Animation {
     final int targetHeight;
     View view;
     int startHeight;
-    int delete;
 
     public AnimationManager(View view, int targetHeight, int startHeight) {
         this.view = view;
