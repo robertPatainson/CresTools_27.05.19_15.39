@@ -14,6 +14,8 @@ import java.util.List;
 public class Device implements Serializable {
 
     public Device() {
+
+        int delete;
     }
 
     public static String devicesAvailablePath = "devicesAvailable";
