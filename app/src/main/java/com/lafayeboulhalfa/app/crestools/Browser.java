@@ -28,6 +28,7 @@ public class Browser {
 
     public static String ipPhone;
 
+    public static String toto;
     public static Timer timer = new Timer();
 
     public static DatagramSocket sock = null;
